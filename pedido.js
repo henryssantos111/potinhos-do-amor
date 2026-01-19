@@ -1,17 +1,17 @@
 let segundos = 0;
 
 function aceitou() {
+    const musica = document.getElementById("musica");
+    musica.play();
+
     document.getElementById("mensagem").innerHTML =
-        "Prometo ser melhor para você a cada dia que passar!! 🤍";
+        "🤍 Eu sabia! Preparei algo muito especial pra você...";
 
-    document.getElementById("musica").play();
-    chuvaDeCoracoes();
-    iniciarContador();
-
-    setTimeout(() => {
-        window.location.href = "potinhos.html";
-    }, 4000);
+    document.getElementById("btn-potinhos").style.display = "block";
 }
+
+
+
 
 function fugir() {
     let botao = document.getElementById("nao");
@@ -44,3 +44,11 @@ function iniciarContador(){
             `⏳ Estamos juntos há ${horas}h ${minutos % 60}min ${segundos % 60}s 🤍`;
     }, 1000);
 }
+
+function irParaPotinhos() {
+    const musica = document.getElementById("musica");
+    musica.pause();       
+    musica.currentTime = 0; 
+    window.location.href = "potinhos.html";
+}
+
