@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido Especial 🤍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="musica" autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>    
+
+<div class="container">
+    <h1>🤍 Daniele, você quer namorar comigo?</h1>
+
+    <p class="texto">
+        Desde que você voltou na minha vida, tudo ficou mais bonito.<br>
+        Eu não consigo mais imaginar meus dias sem você…
+    </p>
+
+    <div class="fotos">
+        <img src="foto1.jpeg" class="foto esquerda">
+        <img src="foto2.jpeg" class="foto centro">
+        <img src="foto3.jpeg" class="foto direita">
+    </div>
+
+    <div class="botoes">
+        <button id="sim" onclick="aceitou()">Sim 🤍</button>
+        <button id="nao" onmouseover="fugir()">Não</button>
+    </div>
+
+    <p id="mensagem"></p>
+    <p id="tempo"></p>
+</div> 
+
+<script src="pedido.js"></script>
+</body>
+</html>
