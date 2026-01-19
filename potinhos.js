@@ -49,3 +49,8 @@ function fechar() {
   modal.style.display = "none";
 }
 
+function resetarPotinhos() {
+  localStorage.removeItem("potinhosAbertos");
+  location.reload();
+} 
+
